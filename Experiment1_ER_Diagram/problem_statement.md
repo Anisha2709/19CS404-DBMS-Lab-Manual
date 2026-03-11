@@ -22,31 +22,35 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 - Payments tracked for memberships and sessions.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_fitness.png)
+<img width="743" height="692" alt="image" src="https://github.com/user-attachments/assets/b4080ffc-10ff-4391-ad41-0e6ad602fd78" />
+
 
 ### Entities and Attributes
 
 | Entity | Attributes (PK, FK) | Notes |
 |--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+| PROGRAM | program_id (PK), program_name, schedule | Fitness programs offered by the gym |
+| TRAINER | trainer_id (PK), trainer_name, specialization | Trainers responsible for conducting sessions |
+| MEMBER | member_id (PK), name, membership_type, start_date | Registered gym members |
+| SESSION | session_id (PK), session_date, time | Training sessions conducted by trainers |
+| PAYMENT | payment_id (PK), amount, payment_date, payment_type | Payments made by members for memberships or sessions |
 
 ### Relationships and Constraints
 
 | Relationship | Cardinality | Participation | Notes |
 |--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+| MEMBER JOINS PROGRAM | M : N | Partial | Members can join multiple programs |
+| PROGRAM ASSIGNED_TO TRAINER | M : N | Partial | A program may have multiple trainers |
+| TRAINER CONDUCTS SESSION | 1 : N | Total (Session) | One trainer conducts multiple sessions |
+| MEMBER ATTENDS SESSION | 1 : N | Partial | Members attend training sessions |
+| MEMBER MAKES PAYMENT | 1 : N | Partial | Members can make multiple payments |
 
 ### Assumptions
-- 
-- 
-- 
+- A member must be registered before joining programs or attending sessions.  
+- A program can have multiple trainers assigned to it.  
+- Each session is conducted by one trainer.  
+- Members can attend multiple training sessions.  
+- Payments are recorded for memberships and additional sessions.
 
 ---
 
