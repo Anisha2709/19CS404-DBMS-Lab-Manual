@@ -106,34 +106,45 @@ A popular restaurant wants to manage reservations, orders, and billing.
 - Waiters assigned to serve reservations.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_restaurant.png)
+<img width="1181" height="839" alt="rest_dbms_anisha drawio" src="https://github.com/user-attachments/assets/28112f57-2ab9-43c8-a76a-7e84ec1978b4" />
+
 
 ### Entities and Attributes
 
 | Entity | Attributes (PK, FK) | Notes |
 |--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+| Customer | CustomerID (PK), Name, Phone, Email | Stores customer details for reservations and contact |
+| Reservation | ReservationID (PK), Date, Time, GuestCount, CustomerID (FK) | Represents a booking made by a customer |
+| Table | TableID (PK), TableNumber, Capacity | Stores information about tables available in the restaurant |
+| Waiter | WaiterID (PK), WaiterName, Phone | Waiter assigned to serve reservations |
+| Order | OrderID (PK), OrderTime, OrderStatus, ReservationID (FK) | Food orders placed for a reservation |
+| Dish | DishID (PK), DishName, Price, CategoryID (FK) | Menu items available for ordering |
+| Category | CategoryID (PK), CategoryName | Groups dishes (Starter, Main Course, Dessert) |
+| Bill | BillID (PK), TotalAmount, ServiceCharge, ReservationID (FK) | Billing details generated for each reservation |
 
 ### Relationships and Constraints
 
 | Relationship | Cardinality | Participation | Notes |
 |--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+| Customer makes Reservation | 1 : N | Partial | One customer can make many reservations |
+| Reservation assigned_to Table | N : 1 | Total (Reservation) | Each reservation is assigned exactly one table |
+| Reservation served_by Waiter | N : 1 | Total (Reservation) | A waiter can serve multiple reservations |
+| Reservation places Order | 1 : N | Partial | A reservation can place multiple orders |
+| Order contains Dish | M : N | Partial | An order may include multiple dishes |
+| Dish belongs_to Category | N : 1 | Total (Dish) | Each dish belongs to exactly one category |
+| Reservation generates Bill | 1 : 1 | Total | Every reservation produces one bill |
 
 ### Assumptions
-- 
-- 
-- 
+- A customer must exist in the system before making a reservation.  
+- Each reservation is assigned to only one table.  
+- A waiter can serve multiple reservations at the same time.  
+- A reservation may place multiple food orders during the dining session.  
+- Each order can contain multiple dishes.  
+- Each dish belongs to exactly one category (Starter, Main Course, Dessert).  
+- Each reservation generates exactly one bill.  
+- Service charge is included in the bill along with the total food amount.
 
 ---
-
 ## Instructions for Students
 
 1. Complete **all three scenarios** (A, B, C).  
