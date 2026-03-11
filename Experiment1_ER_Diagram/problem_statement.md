@@ -64,34 +64,38 @@ The Central Library wants to manage book lending and cultural events.
 - Overdue fines apply for late returns.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_library.png)
+<img width="799" height="688" alt="image" src="https://github.com/user-attachments/assets/f0dab54c-484f-4d4d-ba4c-5a57139b48d2" />
+
 
 ### Entities and Attributes
 
 | Entity | Attributes (PK, FK) | Notes |
 |--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+| MEMBER | id (PK), name, phone, email | Represents a registered library member |
+| BOOK | book_id (PK), title, author, category | Stores details of books available in the library |
+| EVENT | event_id (PK), event_name, date, time | Library events such as talks or workshops |
+| SPEAKER | speaker_id (PK), speaker_name, bio | Speakers or authors invited for events |
+| ROOM | room_id (PK), room_name, capacity, room_type | Rooms used for events or study sessions |
 
 ### Relationships and Constraints
 
 | Relationship | Cardinality | Participation | Notes |
 |--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+| MEMBER BORROWS BOOK | 1 : N | Partial | A member can borrow multiple books |
+| MEMBER REGISTERS EVENT | M : N | Partial | Members can register for multiple events |
+| EVENT HAS SPEAKER | M : N | Total (Event) | Each event may have multiple speakers |
+| EVENT USES ROOM | 1 : N | Total (Event) | Each event uses one room |
+| ROOM USED_BY EVENT | 1 : N | Partial | A room can be used for multiple events |
 
 ### Assumptions
-- 
-- 
-- 
+- Members must be registered before borrowing books.  
+- A member can borrow multiple books over time.  
+- Members can register for multiple events.  
+- Events may feature multiple speakers or authors.  
+- Each event takes place in one room.  
+- Rooms can host multiple events at different times.
 
 ---
-
 # Scenario C: Restaurant Table Reservation & Ordering
 
 **Business Context:**  
