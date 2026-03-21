@@ -175,8 +175,8 @@ delete from Doctors where specialization='Pediatrics' and first_name='Michael';
 
 <img width="812" height="226" alt="image" src="https://github.com/user-attachments/assets/8f13846f-f2d0-4aa5-a9f3-b632274e42be" />
 
-## Screenshot of Module 3 SEB Completion Grades
-<img width="869" height="31" alt="image" src="https://github.com/user-attachments/assets/9f79a883-0441-443b-aa29-ecb55335f109" />
+## Screenshot of Module 2 SEB Completion Grades
+<img width="1030" height="58" alt="image" src="https://github.com/user-attachments/assets/ad0af15f-7574-4af0-91f5-7f7ec2e9e283" />
 
 
 ## RESULT
