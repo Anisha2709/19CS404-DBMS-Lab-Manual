@@ -240,6 +240,7 @@ Stock INTEGER);
 <img width="982" height="184" alt="image" src="https://github.com/user-attachments/assets/9bcbf7e2-110c-42a4-943f-7e860e75e18e" />
 
 ## Screenshot of Module 2 SEB Completion Grades
+<img width="976" height="66" alt="image" src="https://github.com/user-attachments/assets/b4fdfffc-47fd-4b36-958c-e90aea753a57" />
 
 
 ## RESULT
