@@ -205,18 +205,28 @@ WHERE d.first_name = 'John'
 -- Paste Question 8 here
 
 ```sql
--- Paste your SQL code below for Question 8
+SELECT 
+    c.*
+FROM customer c
+LEFT JOIN salesman s
+    ON c.salesman_id = s.salesman_id
+WHERE s.name = 'Mc Lyon';
 ```
 
 **Output:**
-
+![Output8](output.png)
 
 **Question 9**
 ---
 -- Paste Question 9 here
 
 ```sql
--- Paste your SQL code below for Question 9
+SELECT 
+    p.first_name
+FROM patients p
+INNER JOIN surgeries s
+    ON p.patient_id = s.patient_id
+WHERE s.surgery_date = '2024-01-15';
 ```
 
 **Output:**
@@ -228,7 +238,11 @@ WHERE d.first_name = 'John'
 -- Paste Question 10 here
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT 
+    c.cust_name
+FROM customer c
+LEFT JOIN orders o
+    ON c.customer_id = o.customer_id;
 ```
 
 **Output:**
