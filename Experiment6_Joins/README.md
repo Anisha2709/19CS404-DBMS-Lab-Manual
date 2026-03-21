@@ -202,7 +202,8 @@ WHERE d.first_name = 'John'
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1119" height="172" alt="image" src="https://github.com/user-attachments/assets/9a5ce9a3-86d9-4704-aa12-bf2f9351c9d0" />
+
 
 ```sql
 SELECT 
@@ -214,11 +215,13 @@ WHERE s.name = 'Mc Lyon';
 ```
 
 **Output:**
-![Output8](output.png)
+<img width="1128" height="221" alt="image" src="https://github.com/user-attachments/assets/abd9e40e-eca4-4016-acb6-dbcabbf0c4f6" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="1128" height="396" alt="image" src="https://github.com/user-attachments/assets/5d3ae85e-1d13-40ab-9ccf-7ffe38282815" />
+
 
 ```sql
 SELECT 
@@ -231,11 +234,13 @@ WHERE s.surgery_date = '2024-01-15';
 
 **Output:**
 
-![Output9](output.png)
+<img width="1119" height="232" alt="image" src="https://github.com/user-attachments/assets/50f39fa6-fd4b-40d7-af74-26c1d2c6c8b5" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="1114" height="332" alt="image" src="https://github.com/user-attachments/assets/0967161e-3628-4060-8764-dedbf3d7893e" />
+
 
 ```sql
 SELECT 
@@ -247,7 +252,11 @@ LEFT JOIN orders o
 
 **Output:**
 
-![Output10](output.png)
+<img width="1111" height="613" alt="image" src="https://github.com/user-attachments/assets/36560d4f-8d8f-4835-949e-56a6deb3bd31" />
+
+
+## Screenshot of Module 5 SEB Completion Grades
+<img width="1001" height="46" alt="image" src="https://github.com/user-attachments/assets/e6c4c542-7542-4432-bc09-dc1166527c3f" />
 
 
 ## RESULT
