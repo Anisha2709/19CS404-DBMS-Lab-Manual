@@ -247,6 +247,9 @@ WHERE salesman_id IN (
 
 <img width="893" height="249" alt="image" src="https://github.com/user-attachments/assets/6715472c-b924-4d64-827c-ee7c66023c53" />
 
+## Screenshot of Module 4 SEB Completion Grades
+<img width="1004" height="55" alt="image" src="https://github.com/user-attachments/assets/5d199c5a-1a6b-4b8c-af40-037242983e67" />
+
 
 ## RESULT
 Thus, the SQL queries to implement subqueries and views have been executed successfully.
