@@ -173,8 +173,8 @@ select jdate, MIN(workhour) from employee1 group by jdate having min(workhour)<=
 
 <img width="385" height="253" alt="image" src="https://github.com/user-attachments/assets/34473308-abd8-46a0-b266-e21c8f2b4b4c" />
 
-## Screenshot of Module 4 SEB Completion Grades
-<img width="1031" height="52" alt="image" src="https://github.com/user-attachments/assets/25e2e125-c5a6-4846-afc7-477784cd0a61" />
+## Screenshot of Module 3 SEB Completion Grades
+<img width="1010" height="47" alt="image" src="https://github.com/user-attachments/assets/df6212ef-c086-4569-835e-93c92a82da8f" />
 
 ## RESULT
 Thus, the SQL queries to implement aggregate functions, GROUP BY, and HAVING clause have been executed successfully.
